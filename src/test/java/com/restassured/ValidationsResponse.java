@@ -44,5 +44,4 @@ public class ValidationsResponse {
                 .body("data.first_name", Matchers.hasItems("George", "Emma"))
                 .log().all();
     }
-
 }
