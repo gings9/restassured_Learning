@@ -25,7 +25,7 @@ public class DeleteUser_DELETE {
 
                 // to extract the response content
                 .extract().response();
-
+        System.out.println(response);
         // convert the response content to the json as string
         // String jsonAsString = response.asString();
 

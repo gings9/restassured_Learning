@@ -2,9 +2,13 @@
     "java.configuration.updateBuildConfiguration": "interactive",
     "cSpell.words": [
         "FIRSTNAME",
+        "Gings",
         "hamcrest",
+        "Kumar",
         "LASTNAME",
         "restassured",
+        "Strudent",
+        "Studentrecord",
         "testng"
     ],
     "java.compile.nullAnalysis.mode": "automatic"

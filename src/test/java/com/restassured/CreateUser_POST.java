@@ -8,7 +8,7 @@ public class CreateUser_POST {
 
     @Test
     void CreateUser() {
-        HashMap reqBody = new HashMap();
+        HashMap<String, String> reqBody = new HashMap<String, String>();
         reqBody.put("name", "Gings");
         reqBody.put("job", "trainer");
 

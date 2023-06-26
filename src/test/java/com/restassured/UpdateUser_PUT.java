@@ -10,7 +10,7 @@ public class UpdateUser_PUT {
 
     @Test(priority = 1)
     void CreateUser() {
-        HashMap reqBody = new HashMap();
+        HashMap<String, String> reqBody = new HashMap<String, String>();
         reqBody.put("name", "Gings");
         reqBody.put("job", "trainer");
 
@@ -27,7 +27,7 @@ public class UpdateUser_PUT {
     // will Run only when create user is successful
     @Test(priority = 2, dependsOnMethods = { "CreateUser" })
     void updateUser() {
-        HashMap reqBody = new HashMap();
+        HashMap<String, String> reqBody = new HashMap<String, String>();
         reqBody.put("name", "Gings");
         reqBody.put("job", "Coder");
 
