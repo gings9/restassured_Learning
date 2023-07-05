@@ -1,15 +1,19 @@
 {
     "java.configuration.updateBuildConfiguration": "interactive",
     "cSpell.words": [
+        "Appium",
         "FIRSTNAME",
         "Gings",
         "hamcrest",
+        "Katalon",
         "Kumar",
         "LASTNAME",
         "restassured",
+        "Scotty",
         "Strudent",
         "Studentrecord",
-        "testng"
+        "testng",
+        "Tokener"
     ],
     "java.compile.nullAnalysis.mode": "automatic"
 }

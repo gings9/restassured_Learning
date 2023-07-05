@@ -9,7 +9,7 @@ import io.restassured.http.ContentType;
 
 public class JSONWithoutSerialization {
 
-    HashMap map = new HashMap();
+    HashMap<String, Object> map = new HashMap<>();
 
     // POST request to create a Student record
     @Test
@@ -30,22 +30,21 @@ public class JSONWithoutSerialization {
                 .contentType(ContentType.JSON)
                 .body(map)
                 .when()
-                .post("http://localhost:8085/student")
+                .post("http://localhost:3000/students")
                 .then()
                 .statusCode(201)
-                .assertThat()
-                .body("msg", Matchers.equalTo("Student added"));
+                .log().all();
     }
 
     // Get a Student record by JSON Request
     @Test(priority = 2)
     public void getStudentrecord() {
         when()
-                .get("http://localhost:8085/student/101")
+                .get("http://localhost:3000/students/2")
                 .then()
                 .statusCode(200)
                 .assertThat()
-                .body("id", Matchers.equalTo(101))
+                .body("id", Matchers.equalTo(2))
                 .log().all();
     }
 }
