@@ -9,12 +9,14 @@
         "Kumar",
         "LASTNAME",
         "Moby",
+        "Responsebody",
         "restassured",
         "Scotty",
         "Strudent",
         "Studentrecord",
         "testng",
-        "Tokener"
+        "Tokener",
+        "Travelerinformation"
     ],
     "java.compile.nullAnalysis.mode": "automatic"
 }

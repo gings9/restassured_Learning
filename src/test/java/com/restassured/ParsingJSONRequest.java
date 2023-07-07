@@ -50,9 +50,33 @@ public class ParsingJSONRequest {
 
         JSONObject jo = new JSONObject(res.asString());
 
+        // to print each book title
+        // for (int i = 0; i < jo.getJSONArray("book").length(); i++) {
+        // String bookName =
+        // jo.getJSONArray("book").getJSONObject(i).get("title").toString();
+        // System.out.println(bookName);
+        // }
+
+        // to validate if the specific book title is present in the JSON
+        // boolean status = false;
+        // for (int i = 0; i < jo.getJSONArray("book").length(); i++) {
+        // String bookName =
+        // jo.getJSONArray("book").getJSONObject(i).get("title").toString();
+
+        // if (bookName.equals("The Lord of the Rings")) {
+        // status = true;
+        // break;
+        // }
+        // }
+        // Assert.assertTrue(status);
+
+        // Validate Total Price of the books
+        double TotalPrice = 0;
         for (int i = 0; i < jo.getJSONArray("book").length(); i++) {
-            String bookName = jo.getJSONArray("book").getJSONObject(i).get("title").toString();
-            System.out.println(bookName);
+            String price = jo.getJSONArray("book").getJSONObject(i).get("price").toString();
+            TotalPrice = TotalPrice + Double.parseDouble(price);
         }
+        System.out.println("Total Price of All Books: " + TotalPrice);
+        Assert.assertEquals(TotalPrice, 526.0);
     }
 }
