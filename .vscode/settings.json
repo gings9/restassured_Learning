@@ -3,12 +3,17 @@
     "cSpell.words": [
         "Appium",
         "FIRSTNAME",
+        "Geco",
         "Gings",
         "hamcrest",
         "Katalon",
         "Kumar",
         "LASTNAME",
+        "Lrtk",
         "Moby",
+        "mypath",
+        "openweathermap",
+        "Oqknx",
         "Responsebody",
         "restassured",
         "Scotty",
@@ -17,7 +22,9 @@
         "stupojo",
         "testng",
         "Tokener",
-        "Travelerinformation"
+        "Travelerinformation",
+        "Twrc",
+        "XCTQ"
     ],
     "java.compile.nullAnalysis.mode": "automatic"
 }
